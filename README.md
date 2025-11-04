@@ -40,3 +40,7 @@ const COVID19_WORLDWIDE_API_ENDPOINT = "https://disease.sh/v3/covid-19/all";
 
 ### GIVEN MORE TIME
 - Would have visualized the data which had been fetched from the API in the React UI dashboard
+
+### SNAPSHOTS
+<img width="1878" height="1007" alt="Screenshot from UI" src="https://github.com/user-attachments/assets/4be1bcc8-dad0-489c-b9e6-2aa0b2ac5b58" />
+
