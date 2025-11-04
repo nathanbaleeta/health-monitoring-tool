@@ -39,3 +39,4 @@ const COVID19_WORLDWIDE_API_ENDPOINT = "https://disease.sh/v3/covid-19/all";
 - CI/CD will also validate that unit and integration tests pass for fetching, parsing data pipelines
 
 ### GIVEN MORE TIME
+- Would have visualized the data which had been fetched from the API in the React UI dashboard
