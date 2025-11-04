@@ -1,0 +1,40 @@
+name: Health Monitoring Tool CI/CD Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build_and_test:
+    # Run the job on the latest version of Ubuntu
+    runs-on: ubuntu-latest
+
+    # Define the steps for the job
+    steps:
+      # Step 1: Check out the code
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          # Use the Node version specified in your package.json, or choose a version
+          node-version: '20' 
+          cache: 'npm' # Cache dependencies to speed up subsequent runs
+
+      # Step 3: Install dependencies
+      - name: Install Dependencies
+        run: npm ci # 'npm ci' is faster and more reliable than 'npm install' for CI
+
+      # Step 4: Run tests (if you have them)
+      - name: Run Tests
+        run: npm test -- --watchAll=false # Assuming your package.json has a 'test' script
+
+      # Step 5: Build the Health Monitoring Tool
+      - name: Build Application
+        run: npm run build # Assuming your package.json has a 'build' script
