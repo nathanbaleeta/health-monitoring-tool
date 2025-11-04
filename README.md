@@ -21,3 +21,13 @@ Build and run your dockerized React app
 ```
 docker build -t health-monitoring-tool .
 ```
+
+Running the Docker container
+For the development image:
+```
+docker run -p 3000:3000 health-monitoring-tool
+```
+Accessing your application
+Next, open your browser and go to:
+
+http://localhost:3000 (for development)
