@@ -5,7 +5,8 @@ A public health monitoring platform tool that collects and visualizes data relat
 - React
 - Docker
 
-### Launch Frontend
+
+### Quick local setup
 ```
 cd client
 npm install && npm run dev
