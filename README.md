@@ -4,3 +4,9 @@ A public health monitoring platform tool that collects and visualizes data relat
 ### Pre-requisites
 - React
 - Docker
+
+### Launch Frontend
+```
+cd client
+npm install && npm run dev
+```
