@@ -4,10 +4,7 @@ A public health monitoring platform tool that collects and visualizes data relat
 ### Pre-requisites
 - React
 - Docker
-### ENDPOINT USED
-```
-const COVID19_WORLDWIDE_API_ENDPOINT = "https://disease.sh/v3/covid-19/all";
-```
+
 ### Quick local setup
 ```
 cd client
@@ -31,3 +28,14 @@ docker run -p 3000:3000 health-monitoring-tool
 ```
 Accessing your application
 Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
+
+### ENDPOINT USED
+```
+const COVID19_WORLDWIDE_API_ENDPOINT = "https://disease.sh/v3/covid-19/all";
+```
+
+### CI/CD Explanation
+- CI/CD will be used to run automated data quality and integrity checks
+- CI/CD will also validate that unit and integration tests pass for fetching, parsing data pipelines
+
+### GIVEN MORE TIME
