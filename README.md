@@ -30,4 +30,4 @@ For the development image:
 docker run -p 3000:3000 health-monitoring-tool
 ```
 Accessing your application
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
