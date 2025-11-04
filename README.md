@@ -4,8 +4,10 @@ A public health monitoring platform tool that collects and visualizes data relat
 ### Pre-requisites
 - React
 - Docker
-
-
+### ENDPOINT USED
+```
+const COVID19_WORLDWIDE_API_ENDPOINT = "https://disease.sh/v3/covid-19/all";
+```
 ### Quick local setup
 ```
 cd client
